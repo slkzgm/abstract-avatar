@@ -8,7 +8,8 @@ export async function GET(request: NextRequest, context: any): Promise<NextRespo
   try {
     await connectDB()
 
-    const tokenId = context.params.tokenId
+    const params = await context.params
+    const tokenId = params.tokenId
     const parsedTokenId = parseInt(tokenId, 10)
     if (isNaN(parsedTokenId) || parsedTokenId <= 0) {
       return NextResponse.json({ error: 'Invalid tokenId' }, { status: 400 })

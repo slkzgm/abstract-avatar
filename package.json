@@ -1,5 +1,5 @@
 {
-  "name": "nextera-abstract",
+  "name": "portal-avatar",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/slkzgm/nextera"
+    "url": "https://github.com/slkzgm/abstract-avatar"
   },
   "dependencies": {
     "@abstract-foundation/agw-client": "^1.6.2",
